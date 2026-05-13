@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <rect width="900" height="520" rx="26" fill="#f4efff" />
+  <rect x="40" y="40" width="820" height="440" rx="18" fill="#ffffff" stroke="#cbbdf4" stroke-width="2" />
+  <path d="M80 360 C200 260, 300 280, 420 210 S630 170, 780 190" fill="none" stroke="#7a62c7" stroke-width="4" />
+  <path d="M80 320 C220 270, 320 230, 470 210 S650 180, 790 160" fill="none" stroke="#a88df0" stroke-width="4" />
+  <path d="M80 420 C240 400, 360 390, 520 360 S680 330, 820 310" fill="none" stroke="#f0b05e" stroke-width="4" />
+  <text x="80" y="110" fill="#4b3d7a" font-family="Space Grotesk, sans-serif" font-size="22">HW3-2 訓練結果圖</text>
+  <text x="80" y="140" fill="#7d6f9e" font-family="Space Grotesk, sans-serif" font-size="14">請以實際輸出圖檔替換</text>
+</svg>
