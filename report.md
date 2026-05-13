@@ -17,7 +17,7 @@
 - Static mode 最簡單，適合用來驗證 DQN 基本行為。
 - Player 與 Random mode 初始狀態多變，因此 Replay 與目標網路的重要性更高。
 
-## HW3-4：Rainbow DQN（random mode）簡化版（Keras）
+## HW3-4：Rainbow DQN（random mode）（Keras）
 - 目標：在 Random Mode GridWorld 上用「簡化版 Rainbow」提升收斂速度與穩定性，沿用既有 Keras 結構。
 - 組合內容（不含 Distributional）：Double DQN + Dueling + Prioritized Replay + Multi-step return + NoisyNet。
 - 預期改善：
