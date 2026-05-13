@@ -98,4 +98,5 @@ if __name__ == "__main__":
     print(f"HW3-1 (Naive DQN, static): {win1:.2%}")
     print(f"HW3-2 (Double DQN, player): {win2:.2%}")
     print(f"HW3-3 (Keras DQN, random): {win3:.2%}")
-    print("HW3-4 (Rainbow DQN, random): skipped (training plot only)")
+    win4 = evaluate_keras(model4, mode="random", episodes=100)
+    print(f"HW3-4 (Rainbow DQN, random): {win4:.2%}")

@@ -32,3 +32,8 @@
   - 加入 n-step buffer，將 $(s,a)$ 對應的 n-step return 與 $s_{t+n}$ 存入 PER。
   - 模型改為 Dueling 結構，並用 Double DQN 的目標計算方式。
   - 使用 NoisyNet 取代 epsilon（或保留小 epsilon 作為保底）。
+
+  ## 實作補充
+  - 本專案提供訓練結果圖（Loss / Avg Return / Win Rate）與路徑圖的靜態展示頁。
+  - 訓練與輸出可透過 run_generate_outputs.py 一鍵更新圖檔。
+  - 目前預設為 4x4、無障礙設定作為基準版本。
