@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <rect width="900" height="520" rx="26" fill="#f9f5ff" />
+  <rect x="120" y="80" width="420" height="420" fill="#ffffff" stroke="#cbbdf4" stroke-width="2" />
+  <g stroke="#dcd3f7" stroke-width="1">
+    <line x1="225" y1="80" x2="225" y2="500" />
+    <line x1="330" y1="80" x2="330" y2="500" />
+    <line x1="435" y1="80" x2="435" y2="500" />
+    <line x1="120" y1="185" x2="540" y2="185" />
+    <line x1="120" y1="290" x2="540" y2="290" />
+    <line x1="120" y1="395" x2="540" y2="395" />
+  </g>
+  <path d="M485 450 L380 450 L380 345 L275 345 L275 240 L170 240" fill="none" stroke="#7a62c7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="485" cy="450" r="12" fill="#7a62c7" />
+  <circle cx="170" cy="240" r="12" fill="#f0b05e" />
+  <text x="600" y="140" fill="#4b3d7a" font-family="Space Grotesk, sans-serif" font-size="22">HW3-2 路徑</text>
+  <text x="600" y="170" fill="#7d6f9e" font-family="Space Grotesk, sans-serif" font-size="14">起點 → 終點示意</text>
+</svg>

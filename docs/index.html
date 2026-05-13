@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DRL HW3 觀察面板</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">DRL HW3</p>
+          <h1>GridWorld 訓練結果與路徑展示</h1>
+          <p class="subtitle">
+            靜態網頁展示 HW3-1 ~ HW3-4 的訓練曲線與 agent 路徑。
+            圖片可替換為實際輸出。
+          </p>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card__title">已顯示內容</div>
+          <ul>
+            <li>Loss / Avg Return / Win Rate 同圖</li>
+            <li>Agent 路徑靜態圖</li>
+            <li>簡潔淡紫主題</li>
+          </ul>
+        </div>
+      </header>
+
+      <main class="grid">
+        <section class="panel">
+          <div class="panel__header">
+            <h2>HW3-1：Naive / Replay DQN</h2>
+            <span>Static + Random</span>
+          </div>
+          <div class="panel__body">
+            <p class="panel__note">特色：基礎 DQN 與 Experience Replay，展示最基本的 Q-learning 收斂行為。</p>
+            <p class="panel__stats">訓練設定：4x4 無障礙，epochs=200；勝率：100.00%（static，100 episodes）</p>
+            <figure>
+              <img src="assets/hw3_1_train.png" alt="HW3-1 訓練曲線" />
+              <figcaption>訓練結果圖（Loss / Avg Return / Win Rate）</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/hw3_1_path.svg" alt="HW3-1 路徑" />
+              <figcaption>Agent 移動路徑（靜態）</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel__header">
+            <h2>HW3-2：Double / Dueling DQN</h2>
+            <span>Player Mode</span>
+          </div>
+          <div class="panel__body">
+            <p class="panel__note">特色：Double 減少高估偏差、Dueling 分離狀態價值與動作優勢。</p>
+            <p class="panel__stats">訓練設定：4x4 無障礙，epochs=200；勝率：70.00%（player，100 episodes）</p>
+            <figure>
+              <img src="assets/hw3_2_train.png" alt="HW3-2 訓練曲線" />
+              <figcaption>訓練結果圖（Loss / Avg Return / Win Rate）</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/hw3_2_path.svg" alt="HW3-2 路徑" />
+              <figcaption>Agent 移動路徑（靜態）</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel__header">
+            <h2>HW3-3：Keras DQN</h2>
+            <span>Random Mode</span>
+          </div>
+          <div class="panel__body">
+            <p class="panel__note">特色：Keras 版 DQN，搭配 Huber loss、梯度裁剪與學習率排程。</p>
+            <p class="panel__stats">訓練設定：4x4 無障礙，epochs=200；勝率：23.00%（random，100 episodes）</p>
+            <figure>
+              <img src="assets/hw3_3_train.png" alt="HW3-3 訓練曲線" />
+              <figcaption>訓練結果圖（Loss / Avg Return / Win Rate）</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/hw3_3_path.svg" alt="HW3-3 路徑" />
+              <figcaption>Agent 移動路徑（靜態）</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel__header">
+            <h2>HW3-4：Rainbow DQN（簡化版）</h2>
+            <span>Random Mode</span>
+          </div>
+          <div class="panel__body">
+            <p class="panel__note">特色：Double + Dueling + PER + n-step + NoisyNet 的簡化組合。</p>
+            <p class="panel__stats">訓練設定：4x4 無障礙，epochs=200；勝率：略過（僅輸出訓練圖）</p>
+            <figure>
+              <img src="assets/hw3_4_train.png" alt="HW3-4 訓練曲線" />
+              <figcaption>訓練結果圖（Loss / Avg Return / Win Rate）</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/hw3_4_path.svg" alt="HW3-4 路徑" />
+              <figcaption>Agent 移動路徑（靜態）</figcaption>
+            </figure>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>圖片檔請放在 site/assets/，名稱與範例一致即可直接替換。</p>
+      </footer>
+    </div>
+  </body>
+</html>
